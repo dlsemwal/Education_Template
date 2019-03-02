@@ -13,7 +13,9 @@ body {
         }
     }
     header {
-        
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
 
         .topHead {
             background-color: rgb(9, 9, 48);

@@ -11,6 +11,9 @@
     z-index: 99;
   }
 }
+body header .dropdown:hover .dropdown-menu {
+  display: block;
+}
 body header .topHead {
   background-color: #090930;
   color: white;
