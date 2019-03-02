@@ -1,7 +1,15 @@
-body header {
-  position: fixed;
-  width: 100%;
-  z-index: 99;
+@media screen and (max-width: 568px) {
+  body header {
+    position: static;
+    background-color: #01010e;
+  }
+}
+@media screen and (min-width: 568px) {
+  body header {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+  }
 }
 body header .topHead {
   background-color: #090930;
@@ -74,6 +82,24 @@ body .features .col-sm-4:hover b {
 body .carousel .carousel-indicators li {
   background-color: #f7631b;
 }
+body .carousel .animation:hover img {
+  transform: rotate(-5deg) scale(1.1);
+}
+body .animation {
+  overflow: hidden;
+}
+body .animation img {
+  transition: all 0.3s;
+}
+body .animation1 {
+  overflow: hidden;
+}
+body .animation:hover img {
+  transform: scale(1.1);
+}
+body .animation1:hover img {
+  transform: scale(1.1);
+}
 body .feeReduce {
   background: url(s-bg.jpg) center;
   background-size: cover;
@@ -145,6 +171,12 @@ body footer ul {
   list-style-type: none;
   padding: 0;
   line-height: 2;
+}
+body footer ul a {
+  color: #aaa;
+}
+body footer ul a:hover {
+  color: #f7631b;
 }
 body footer .btn {
   background-color: #f7631b;

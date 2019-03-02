@@ -1,9 +1,20 @@
 body {
+    @media screen and (max-width : 568px) {
+        header {
+            position: static;
+            background-color: rgb(1, 1, 14);
+        }
+    }
+    @media screen and (min-width : 568px) {
+        header {
+            position: fixed;
+            width: 100%;
+            z-index: 99;
+        }
+    }
     header {
         
-        position: fixed;
-        width: 100%;
-        z-index: 99;
+
         .topHead {
             background-color: rgb(9, 9, 48);
             color: white
@@ -80,6 +91,24 @@ body {
         .carousel-indicators li {
             background-color: #f7631b;
         }
+        .animation:hover img {
+            transform: rotate(-5deg) scale(1.1);
+        }
+    }
+    .animation {
+        overflow: hidden;
+    }
+    .animation img {
+        transition: all 0.3s;
+    }
+    .animation1 {
+        overflow: hidden;
+    }
+    .animation:hover img {
+        transform: scale(1.1)
+    }
+    .animation1:hover img {
+        transform: scale(1.1)
     }
     .feeReduce {
         background: url(s-bg.jpg) center;
@@ -142,6 +171,7 @@ body {
     }
     img:not(#logo) {
         width: 100%;
+        
     }
     .viewBlog {
         background-color: #f7631b;
@@ -155,6 +185,12 @@ body {
             list-style-type: none;
             padding: 0;
             line-height: 2;
+            a {
+                color: #aaa;
+            }
+            a:hover {
+                color: #f7631b;
+            }
         }
         .btn {
             background-color: #f7631b;
