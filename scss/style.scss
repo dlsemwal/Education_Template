@@ -91,7 +91,7 @@ body {
         .carousel-indicators li {
             background-color: #f7631b;
         }
-        .animation:hover img {
+        .col-6 .animation:hover img {
             transform: rotate(-5deg) scale(1.1);
         }
     }
@@ -101,13 +101,7 @@ body {
     .animation img {
         transition: all 0.3s;
     }
-    .animation1 {
-        overflow: hidden;
-    }
     .animation:hover img {
-        transform: scale(1.1)
-    }
-    .animation1:hover img {
         transform: scale(1.1)
     }
     .feeReduce {

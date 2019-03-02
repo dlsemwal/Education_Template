@@ -82,7 +82,7 @@ body .features .col-sm-4:hover b {
 body .carousel .carousel-indicators li {
   background-color: #f7631b;
 }
-body .carousel .animation:hover img {
+body .carousel .col-6 .animation:hover img {
   transform: rotate(-5deg) scale(1.1);
 }
 body .animation {
@@ -91,13 +91,7 @@ body .animation {
 body .animation img {
   transition: all 0.3s;
 }
-body .animation1 {
-  overflow: hidden;
-}
 body .animation:hover img {
-  transform: scale(1.1);
-}
-body .animation1:hover img {
   transform: scale(1.1);
 }
 body .feeReduce {
